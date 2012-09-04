@@ -22,8 +22,6 @@ try:
     conn = MySQLdb.connect (host = "gpstrading.it", user = "Protrader", passwd = "3zyxelhub3", db = "Gestionale")
 except MySQLdb.Error, e:
     print "Error in connection %d: %s" % (e.args[0], e.args[1])
-    
-
             
 class CustomDataTable(gridlib.PyGridTableBase):
     def __init__(self, tbName, log):
