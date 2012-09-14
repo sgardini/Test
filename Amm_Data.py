@@ -188,6 +188,7 @@ class TestFrame(wx.Frame):
         bsv.Add((15,15), 0)
         
         p.SetSizer(bsv)
+        p.Refresh
         
         
         
@@ -211,6 +212,8 @@ class TestFrame(wx.Frame):
         t2 = datetime.datetime.now()
         print "Tempo x lettura table " + str(t1-t0)
         print "Tempo x creazione grid " + str(t2-t1)
+        #self.p.Refresh
+        self.Refresh
     def OnButtonFocus(self, evt):
         print "button focus"
         
